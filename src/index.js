@@ -1,5 +1,6 @@
 import React from "react";
 import SearchEngine from "./SearchEngine";
+import ReactDom from "react-dom";
 
 function App() {
     return (
@@ -10,3 +11,5 @@ function App() {
         </div>
     );
 }
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
